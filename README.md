@@ -1,1 +1,2 @@
-# Effective_Java_Study
+# Study Record
+- Effective Java
