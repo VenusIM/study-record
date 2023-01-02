@@ -1,7 +1,5 @@
 package ch02.item01.code.장점5.reflection;
 
-import ch02.item01.code.장점2.Pros2;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
