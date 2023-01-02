@@ -3,12 +3,22 @@ package ch02.item01.code.장점3_장점4;
 public class Main {
     public static void main(String[] args) {
 
-        Pencil redPencil = Pencil.of("Red");
-        Pencil bluePencil = Pencil.of("Blue");
-        Pencil notPencil = Pencil.of("Black");
+       Pencil.of("Red").info();
+       Pencil.of("Blue").info();
+       Pencil.of("Black").info();
 
-        redPencil.info();
-        bluePencil.info();
-        notPencil.info();
+
+        /*
+        Pencil pencil = new Pencil() {
+            @Override
+            public void info() {
+            }
+        };
+
+        pencil.of("Red").info();
+        pencil.of("Blue").info();
+        pencil.of("Black").info();
+        */
+
     }
 }

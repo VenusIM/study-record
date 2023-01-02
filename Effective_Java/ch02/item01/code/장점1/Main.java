@@ -6,8 +6,8 @@ public class Main {
         // private을 통한 기본 생성 불가
         // Ex1 ex1 = new Ex1("junee");
 
-        Ex1 ex1 = Ex1.nameOf("junhee");
-        System.out.print(ex1.getName());
+        Pros1 pros1 = Pros1.nameOf("junhee");
+        System.out.print(pros1.getName());
 
     }
 }
