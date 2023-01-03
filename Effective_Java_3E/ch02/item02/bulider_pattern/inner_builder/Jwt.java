@@ -1,4 +1,4 @@
-package ch02.item02.bulider_pattern.before;
+package ch02.item02.bulider_pattern.inner_builder;
 
 /**
  * 빌더 패턴 (Builder Pattern)
