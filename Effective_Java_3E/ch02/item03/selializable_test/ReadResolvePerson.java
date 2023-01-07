@@ -3,6 +3,9 @@ package ch02.item03.selializable_test;
 import java.io.Serializable;
 
 public class ReadResolvePerson implements Serializable {
+
+    private transient String temp;
+
     public static final ReadResolvePerson INSTANCE = new ReadResolvePerson();
 
     private ReadResolvePerson(){
@@ -19,5 +22,4 @@ public class ReadResolvePerson implements Serializable {
     public Object readResolve() {
         return INSTANCE;
     }
-
 }

@@ -18,5 +18,4 @@ public class GenericSingletonFactory<T> {
         System.out.println("Typing "+t.getClass()+" "+t);
     }
 
-
 }

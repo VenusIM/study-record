@@ -5,7 +5,6 @@ public class MockPerson implements Person {
     public void move() {
         System.out.println("MockPerson is moving");
     }
-
     @Override
     public void run() {
         System.out.println("MockPerson is running");

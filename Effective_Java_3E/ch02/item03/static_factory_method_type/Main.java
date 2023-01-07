@@ -6,5 +6,4 @@ public class Main {
         person.move();
         person.run();
     }
-
 }
