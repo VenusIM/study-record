@@ -11,6 +11,8 @@ public class Main {
         Set<String> setAdapterA = map.keySet();
         Set<String> setAdapterB = map.keySet();
 
+        System.out.println(setAdapterA == setAdapterB);
+        System.out.println(setAdapterA.hashCode() == setAdapterB.hashCode());
         System.out.println(setAdapterA.equals(setAdapterB));
 
 

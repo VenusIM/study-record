@@ -8,8 +8,8 @@ public class Wrapper {
 
     public void sumLongValue() {
         Long startTime = System.nanoTime();
-        for(int i = 0; i < 100; i++) {
-            longValue++;
+        for(long i = 0; i < 100000; i++) {
+            longValue += i;
         }
         System.out.println("Wrapper Class Long >> " + (System.nanoTime() - startTime));
     }

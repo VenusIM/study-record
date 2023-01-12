@@ -8,9 +8,15 @@ public class Primitive {
 
     public void sumLongValue() {
         long startTime = System.nanoTime();
-        for(int i = 0; i < 100; i++) {
+        for(int i = 0; i < 100000; i++) {
             longValue++;
         }
-        System.out.println("Primitive type long >> " + (System.nanoTime() - startTime));
+        System.out.println("Primitive type add int >> " + (System.nanoTime() - startTime));
+
+        startTime = System.nanoTime();
+        for(long i = 0; i < 100000; i++) {
+            longValue += i;
+        }
+        System.out.println("Primitive type add long >> " + (System.nanoTime() - startTime));
     }
 }
