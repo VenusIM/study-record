@@ -18,9 +18,22 @@ public class Stack {
     }
 
     public Object pop() {
-        if (size == 0)
+        if (size == 0) {
             throw new EmptyStackException();
+        }
+//        memoryCheck();
         return elements[--size];
+    }
+
+
+    public Object popThenNull() {
+        if (size == 0) {
+            throw new EmptyStackException();
+        }
+        Object result = elements[--size];
+        elements[size] = null;
+//        memoryCheck();
+        return result;
     }
 
     /**
@@ -30,8 +43,12 @@ public class Stack {
     private void ensureCapacity() {
         if (elements.length == size) {
             elements = Arrays.copyOf(elements, 2 * size + 1);
-            System.out.println("Memory >> "+ (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()));
+//            memoryCheck();
         }
     }
+
+//    private void memoryCheck() {
+//        System.out.println(" Memory >> "+ (TOTAL_MEMORY - Runtime.getRuntime().freeMemory()));
+//    }
 }
 
