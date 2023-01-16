@@ -1,4 +1,4 @@
-package ch02.item07;
+package ch02.item07.stack;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
@@ -36,10 +36,6 @@ public class Stack {
         return result;
     }
 
-    /**
-     * 원소를 위한 공간을 적어도 하나 이상 확보한다.
-     * 배열 크기를 늘려야 할 때마다 대략 두 배씩 늘린다.
-     */
     private void ensureCapacity() {
         if (elements.length == size) {
             elements = Arrays.copyOf(elements, 2 * size + 1);
