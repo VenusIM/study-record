@@ -6,7 +6,8 @@ package ch02.item02.bulider_pattern.inner_builder;
  * ex) 필수 값을 만들 수 없다. 제공하는 방식으로만 구성 가능하다.
  */
 public class Jwt {
-
+    
+    private static final JwtBuilder jwtBuilder;
     private static final String SECRET_KEY = "1234"; // JWT Secret Key
     private final String userIdx;
     private final String userId;
@@ -30,6 +31,13 @@ public class Jwt {
         this.status = jwtBuilder.status;
         this.loginUiType = jwtBuilder.loginUiType;
         this.checkPwd = jwtBuilder.checkPwd;
+    }
+    
+    public static JwtBuilder builder(String userIdx, String userId, String userNm) {
+        if(jwtBuilder != null) {
+            return jwtBuilder;
+        }
+        return new JwtBuilder(userIdx, userId, userNm);
     }
 
     @Override
