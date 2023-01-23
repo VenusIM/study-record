@@ -1,4 +1,4 @@
-package ch02.item09;
+package ch02.item09.auto_closable;
 
 public class NoneAutoClosable {
 

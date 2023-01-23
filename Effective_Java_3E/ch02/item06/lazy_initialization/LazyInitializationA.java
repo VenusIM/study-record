@@ -10,5 +10,4 @@ public class LazyInitializationA {
         }
         return classB;
     }
-
 }

@@ -18,5 +18,6 @@ public class Main {
         }
         used = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
         System.out.println("지연 초기화를 이용하여 호출시 생성할 경우 메모리 사용량    >> " + used);
+
     }
 }

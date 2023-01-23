@@ -5,7 +5,6 @@ public class ClassB {
     private ClassA classA;
 
     public ClassB() {
-//        this.classA = new ClassA();
     }
 
 }
