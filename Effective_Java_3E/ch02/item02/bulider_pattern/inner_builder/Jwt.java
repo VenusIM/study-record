@@ -7,7 +7,7 @@ package ch02.item02.bulider_pattern.inner_builder;
  */
 public class Jwt {
     
-    private static final JwtBuilder jwtBuilder;
+    private static JwtBuilder jwtBuilder;
     private static final String SECRET_KEY = "1234"; // JWT Secret Key
     private final String userIdx;
     private final String userId;

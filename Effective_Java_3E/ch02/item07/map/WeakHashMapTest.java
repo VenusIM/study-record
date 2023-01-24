@@ -1,5 +1,6 @@
 package ch02.item07.map;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 import java.util.WeakHashMap;
@@ -20,13 +21,12 @@ public class WeakHashMapTest {
         weakMap.put(key1, stack1);
         weakMap.put(key2, stack2);
 
-        /*
-        Map<Integer, Stack<String>> hashMap = new HashMap<>();
+       /* Map<Integer, Stack<String>> hashMap = new HashMap<>();
         hashMap.put(key1, stack1);
-        hashMap.put(key2, stack2);
-        */
+        hashMap.put(key2, stack2);*/
 
-        key1 = null;
+//        key1 = null;
+        stack1 = null;
 
         System.gc();
 
