@@ -21,10 +21,10 @@ public class ObjectsTest {
         /**
          * Supplier Interface 를 인자로 받는 메서드
          */
-        /*Objects.requireNonNull(null, () -> {
-            String s = "It's Null";
-            return s;
-        });*/
+//        Objects.requireNonNull(null, () -> {
+//            String s = "It's Null";
+//            return s;
+//        });
 
         /**
          *  Supplier 의 지연 연산의 이점
@@ -38,6 +38,16 @@ public class ObjectsTest {
 //        System.out.println(Objects.requireNonNullElseGet(null, new LazySupplier()));
 //        Objects.requireNonNullElseGet(null, (Supplier<String>) () -> null);
 
+        /**
+         * index 음수, 길이 체크
+         */
+//        Objects.checkIndex(1,0);
+
+        /**
+         * index 음수, 범위, 길이 체크
+         */
+//        Objects.checkFromToIndex(1,3,2);
+//        Objects.checkFromIndexSize(2,2,3);
     }
 
     private static class LazySupplier implements Supplier {
