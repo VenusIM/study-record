@@ -34,9 +34,9 @@ public class ObjectsTest {
         /**
          * 대상 및 supplier 모두 null check 지원 메소드
          */
-//        Objects.requireNonNullElseGet("", new LazySupplier());
-//        System.out.println(Objects.requireNonNullElseGet(null, new LazySupplier()));
-//        Objects.requireNonNullElseGet(null, (Supplier<String>) () -> null);
+        Objects.requireNonNullElseGet("", new LazySupplier());
+        System.out.println(Objects.requireNonNullElseGet(null, new LazySupplier()));
+        Objects.requireNonNullElseGet(null, (Supplier<String>) () -> null);
 
         /**
          * index 음수, 길이 체크
@@ -46,8 +46,8 @@ public class ObjectsTest {
         /**
          * index 음수, 범위, 길이 체크
          */
-//        Objects.checkFromToIndex(1,3,2);
-//        Objects.checkFromIndexSize(2,2,3);
+        Objects.checkFromToIndex(1,3,2);
+        Objects.checkFromIndexSize(2,2,3);
     }
 
     private static class LazySupplier implements Supplier {
