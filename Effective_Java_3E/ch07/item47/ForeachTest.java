@@ -30,7 +30,7 @@ public class ForeachTest {
         AbstractList<Set<Integer>> collection2 = (AbstractList<Set<Integer>>) of(set2);
 
         for (int i = 0; i < 30; i++) {
-            collection2.get(i);
+            System.out.println("result"+i+" : "+collection2.get(i));
         }
 
 

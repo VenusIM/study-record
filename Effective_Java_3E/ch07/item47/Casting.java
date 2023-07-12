@@ -12,12 +12,13 @@ public class Casting {
         Iterator<String> iterator = Collections.emptyIterator();
         Iterable<String> iterable = (Iterable<String>) iterator;
         Stream<String> stream = (Stream<String>) iterable;
+        iterator = (Iterator<String>) iterable;
+        iterator = (Iterator<String>) stream;
 
         Iterable<String> abc = Arrays.asList("a","b","c");
 
         Iterator<String> iteratorFromIterable = iterable.iterator();
-        Iterator<String> iteratorFromStream =
-                stream.iterator();
+        Iterator<String> iteratorFromStream = stream.iterator();
 
         Integer integer = 10;
         double d = (double) Integer.valueOf(1);
